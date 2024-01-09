@@ -6,11 +6,10 @@ import math
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
-url = "http://192.168.86.28:8080/video"
 detector = htm.handDetector()
 
 width, height = 640, 480
-cap = cv2.VideoCapture(url)
+cap = cv2.VideoCapture()
 cap.set(3, width)
 cap.set(4, height)
 prev_time = 0
